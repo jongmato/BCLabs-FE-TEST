@@ -14,7 +14,10 @@ const ShowAllEventsModal = ({ onClose }: Props) => {
         const eventStartDate = event.start.date ? event.start.date : event.start.dateTime;
         const eventEndDate = event.end.date ? event.end.date : event.end.dateTime;
         return (
-          <div className="mb-4 flex w-full flex-col items-start justify-center space-y-4 overflow-y-auto rounded-2xl bg-violet-500 p-2">
+          <div
+            key={event.id}
+            className="mb-4 flex w-full flex-col items-start justify-center space-y-4 overflow-y-auto rounded-2xl bg-violet-500 p-2"
+          >
             <span className="text-2xl">{event.summary}</span>
             <span>{event.description}</span>
             <span>{`${getSimpleDateFormat(new Date(eventStartDate as string))} ${getDateTimeFormat(
