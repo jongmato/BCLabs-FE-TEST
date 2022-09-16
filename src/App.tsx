@@ -64,7 +64,7 @@ function App() {
   }, []);
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center p-8">
-      <h1 className="mb-4 flex justify-center text-2xl font-bold">React App with Google Calendar API!</h1>
+      <h1 className="mb-4 flex justify-center text-2xl font-bold">주간 달력</h1>
       <div className="mt-2 flex h-screen w-full flex-col items-center rounded-md bg-slate-800 py-6 px-4">
         <div className="mb-2 flex w-full items-center space-x-4 text-white">
           <div className="flex w-full items-center space-x-4">
